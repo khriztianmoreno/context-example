@@ -1,21 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
-import { NumberProvider } from './NumberContext'
+import { Padre } from './Padre';
 
-import { ComponentA } from './ComponentA';
-import { ComponentB } from './ComponentB';
-
+import { ThemeProvider } from './ThemeContext'
 function App() {
   return (
-    <div className="App">
-      <NumberProvider>
-        <ComponentA />
-      </NumberProvider>
-
-
-      <ComponentB />
-    </div>
+    <ThemeProvider>
+      <Padre />
+    </ThemeProvider>
   );
 }
 
